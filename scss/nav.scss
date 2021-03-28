@@ -1,0 +1,42 @@
+nav {
+  position: fixed;
+  height: 100%;
+  width: 165px;
+  padding-left: 30px;
+
+  background-color: #eeebd3;
+
+  .links {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 190px;
+
+    a {
+      text-decoration: none;
+      font-style: bold;
+      color: rgb(90, 90, 90);
+      font-family: NunitoBold;
+      font-size: 20px;
+    }
+    a:hover {
+      color: $sub-color;
+    }
+    a:active {
+      color: $sub-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  nav {
+    width: 100px;
+    padding-left: 20px;
+    .links {
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+}

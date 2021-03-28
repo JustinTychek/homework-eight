@@ -1,0 +1,109 @@
+.home-page {
+  // position: absolute;
+  // right: 0;
+  max-width: 1340px;
+  height: 100%;
+  margin-left: 165px;
+  // background-color: hotpink;
+  background-image: linear-gradient(to right, $header-overlay, $header-overlay),
+    url(../images/easter-egg-pile.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .home-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 500px;
+    background-color: $sub-color;
+    opacity: 0.9;
+    .easter-title {
+      font-size: 55px;
+      font-family: NunitoBold;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .easter-text {
+      font-size: 30px;
+      font-family: NunitoReg;
+      color: white;
+    }
+
+    .sign-up {
+      text-decoration: none;
+      font-size: 28px;
+      font-family: NunitoReg;
+      color: white;
+      border: 2px white solid;
+      padding: 10px 20px;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .home-page {
+    margin-left: 100px;
+    .home-title {
+      max-width: 650px;
+      height: 400px;
+
+      .ethel-title {
+        font-size: 40px;
+      }
+      .ethel-text {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-page {
+    margin-left: 100px;
+    .home-title {
+      max-width: 500px;
+      height: 300px;
+
+      .ethel-title {
+        font-size: 30px;
+      }
+      .ethel-text {
+        font-size: 15px;
+      }
+      .sign-up {
+        font-size: 18px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .home-page {
+    margin-left: 100px;
+    .home-title {
+      max-width: 400px;
+      height: 250px;
+
+      .ethel-title {
+        font-size: 25px;
+      }
+      .ethel-text {
+        font-size: 14px;
+      }
+      .sign-up {
+        font-size: 16px;
+        padding: 5px 10px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
